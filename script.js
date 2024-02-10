@@ -14,7 +14,7 @@ map.on('load', () => {
     //add the first data source containing cycling network GeoJSON data
     map.addSource('network-data', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/MissyZhang/GGR472-lab2/main/data/cycling-network.geojson' 
+        data: 'https://MissyZhang.github.io/GGR472-lab2/data/cycling-network.geojson' 
 
     });
 
@@ -34,7 +34,7 @@ map.on('load', () => {
     //add the second data source containing parking racks GeoJSON data
     map.addSource('parking-data', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/MissyZhang/GGR472-lab2/main/data/Bicycle%20Parking%20Racks%20Data.geojson' 
+        data: 'https:///MissyZhang.github.io/GGR472-lab2/data/Bicycle%20Parking%20Racks%20Data.geojson' 
 
     });
     // Add a layer to display the parking rack points
