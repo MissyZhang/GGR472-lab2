@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first web map</title>
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+
+  <body>
+
+    <div class="container-fluid">
+        <!-- Introduction Section -->
+        <div class="row justify-content-center"> <!-- Centering the row -->
+            <div class="col-md-8 col-lg-10"> <!-- This div spans 8 columns on medium screens and 10 columns on large screens -->
+                <!-- Image container -->
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1506272894850-1b746f151780?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%; height:750px;" alt="Cityscape">
+                    <!-- Title container -->
+                    <div class="title">
+                        <h1>Cycling Network & Parking in Toronto Neighborhoods</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Content Section -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-10">
+                <!-- Introduction -->
+                <div>
+                    <h2>Introduction</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-lg-12"> <!-- This div spans 8 columns on medium screens and 12 columns on large screens -->
+                        <!-- Introduction content -->
+                        <p>This map aims to provide accessible and insightful information about Toronto's population distribution, cycling infrastructure, and bike parking accessibility. Please review the following information to help you read the map:</p>
+                        <!-- List of key points -->
+                        <ul>
+                            <li><strong>Red Polygons:</strong> Different shades of red represent varying population densities in each neighborhood. Darker shades indicate larger populations, while lighter shades suggest smaller populations.</li>
+                            <li><strong>Blue Lines:</strong> Represent the cycling network in Toronto.</li>
+                            <li><strong>Yellow Points:</strong> Indicate bike parking racks across the city.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Map Section -->
+                <div>
+                    <h2>Map</h2>
+                </div>
+                <div id="my-map" class="map-container"></div>
+    
+                <!-- Data Sources Section -->
+                <div>
+                    <h2>Data Sources</h2>
+                    <ul>
+                        <li><a href="https://open.toronto.ca/dataset/neighbourhood-crime-rates/" target="_blank">Neighborhood Population</a></li>
+                        <li><a href="https://open.toronto.ca/dataset/bicycle-parking-racks/" target="_blank">Bicycle Parking Racks</a></li>
+                        <li><a href="https://open.toronto.ca/dataset/cycling-network/" target="_blank">Cycling Network</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    
+
+    <!-- Script references -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
+
+
+
